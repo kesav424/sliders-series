@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100hv;
+  width: 80%;
+  margin: 10% auto;
+}
+.curosul {
+  width: 100%;
+  height: 400px;
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  width: 400%;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.slider .slider__item {
+  flex-basis: 100%;
+  display: grid;
+  place-content: center;
+}
+
+/* controlss */
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.arrow-left {
+  left: 10px;
+}
+.arrow-right {
+  right: 10px;
+}
+.controls ul {
+  list-style: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+.pagination {
+  width: 20px;
+  height: 20px;
+  border: 2px solid pink;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pagination.selected {
+  background-color: pink;
+}
