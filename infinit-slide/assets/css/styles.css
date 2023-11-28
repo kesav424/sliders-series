@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.curousel {
+  width: 80%;
+  height: 200px;
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid yellow;
+  overflow: hidden;
+}
+.slide {
+  display: flex;
+  width: 500%;
+  position: absolute;
+  /* border: 2px solid red; */
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.slide .section {
+  flex-shrink: 0;
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide .section {
+  color: black;
+}
+.next,
+.prev {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.next {
+  right: 10px;
+}
+.prev {
+  left: 10px;
+}
