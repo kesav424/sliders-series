@@ -12,11 +12,6 @@ next.addEventListener("click", () => {
 
 prev.addEventListener("click", () => {
   dirction = 1;
-  if (dirction == -1) {
-    dirction = 1;
-    slide.appendChild(slide.firstElementChild);
-  }
-
   // curosoul.style.justifyContent = "flex-end";
   slide.style.transform = "translateX(20%)";
 });
